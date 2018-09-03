@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3-4</title>
+</head>
+<body>
+<div style="text-align: center;font-size: 50px;">
+    <i>Nhập Bán Kính Hình Tròn</i><br>
+    <label for="tinh"></label><input type="number" id="tinh"><br>
+    <button type="button" onclick="button()">Tính Toán</button><br><br>
+    <output id="chuvi"></output><br>
+    <output id="dientich"></output>
+</div>
+<script>
+    function button() {
+        let r = document.getElementById("tinh").value;r = parseInt(r);
+        let s = r*r*3.14;
+        let c = r*2*3.14;
+        document.getElementById("chuvi").innerHTML = "chu vi " + c;
+        document.getElementById("dientich").innerHTML = "diện tích " + s;
+    }
+</script>
+</body>
+</html>

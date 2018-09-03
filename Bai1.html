@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Điểm số</title>
 </head>
 <body>
-$END$
+<script>
+        a = prompt("Nhập điểm Hóa học: ");a=parseFloat(a);
+        b = prompt("Nhập điểm Vật Lý: ");b=parseFloat(b);
+        c = prompt("Nhập điểm Sinh học: ");c=parseFloat(c);
+
+        let Tong = (a+b+c);
+        document.write("Tong = " + Tong);
+        document.write("<br/>");
+        let TBC = Tong/3;
+        document.write("TBC = " + TBC);
+</script>
 </body>
 </html>
